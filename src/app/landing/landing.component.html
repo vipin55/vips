@@ -1,0 +1,9 @@
+<div class="card text-center">
+    <div class="card-header">
+        User Information
+    </div>
+    <div class="card-body">
+        <p>User, {{ (login | async).firstName }} {{ (login | async).lastName }}</p>
+        <p>Last Login : {{ (login | async).date | date:'medium'}}</p>
+    </div>
+</div>
